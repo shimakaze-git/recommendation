@@ -13,6 +13,8 @@ scipy = "*"
 sklearn = "*"
 opencv-python = "*"
 streamlit = "*"
+mecab-python3 = "*"
+pillow = "*"
 
 [requires]
 python_version = "3.8"

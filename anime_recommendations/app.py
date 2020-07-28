@@ -1,7 +1,10 @@
+from PIL import Image
+
 import streamlit as st
 import pandas as pd
 
 from search import anime_name_search
+from text_mining import create_keyword_image
 
 """
 # anime_recommendations Sample Application.
@@ -43,6 +46,11 @@ def dataframe(frames, columns):
     return df
 
 
+def create_image(keyword):
+    img_path = create_keyword_image(keyword)
+    return img_path
+
+
 if __name__ == "__main__":
     """
     # アニメ検索.
@@ -81,3 +89,15 @@ if __name__ == "__main__":
 
         df = dataframe(anime_list, columns)
         st.dataframe(df)
+
+        # 検索キーワードによる画像の生成
+        img_path = create_image(keyword)
+        st.write(img_path)
+
+        # 画像を表示
+        image = Image.open(img_path)
+        st.image(
+            image,
+            caption='search keyword',
+            use_column_width=True
+        )

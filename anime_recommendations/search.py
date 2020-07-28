@@ -1,15 +1,9 @@
-import pandas as pd
-
-
-def read_csv():
-    anime = pd.read_csv('anime.csv')
-    return anime
+from read_data import read_anime_rating_data
 
 
 def anime_name_search_csv(anime_keyword=''):
     # アニメの名称を元に部分一致するアニメを返す
-
-    anime_df = read_csv()
+    anime_df, _ = read_anime_rating_data(source='csv')
 
     # 特定の文字列を含む
     search_results = anime_df[anime_df['name'].str.contains(anime_keyword)]
