@@ -130,3 +130,5 @@ dmypy.json
 
 anime.csv
 rating.csv
+
+*.otf
