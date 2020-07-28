@@ -1,3 +1,16 @@
+# Web
+
+streamlit で表示
+
+streamlit の詳細は以下を参照
+
+- [Python のスクリプトからウェブアプリを簡単に作れる Streamlit をさわってみた](https://dev.classmethod.jp/articles/streamlit-intro/)
+- [Streamlit: データサイエンティストのためのフロントエンド](https://note.com/navitime_tech/n/ned827292df6f)
+
+```
+$ streamlit run app.py
+```
+
 # Anime.csv
 
 - anime_id – アニメを識別する myanimelist.net のユニークな ID。
@@ -17,3 +30,4 @@
 # Links
 
 - [Dataset](https://www.kaggle.com/CooperUnion/anime-recommendations-database)
+- [アイテムベース協調フィルタリングでリコメンドの仕組みを作成](http://maruo51.com/2019/06/30/python-recommend/)
