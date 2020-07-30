@@ -11,6 +11,12 @@ streamlit の詳細は以下を参照
 $ streamlit run app.py
 ```
 
+# Install
+
+```
+$ pipenv lock -r -d > ./src/requirements.txt
+```
+
 # Anime.csv
 
 - anime_id – アニメを識別する myanimelist.net のユニークな ID。
