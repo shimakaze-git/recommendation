@@ -37,3 +37,4 @@ $ pipenv lock -r -d > ./src/requirements.txt
 
 - [Dataset](https://www.kaggle.com/CooperUnion/anime-recommendations-database)
 - [アイテムベース協調フィルタリングでリコメンドの仕組みを作成](http://maruo51.com/2019/06/30/python-recommend/)
+- [機械学習を使って630万件のレビューに基づいたアニメのレコメンド機能を作ってみよう（機械学習 k近傍法 初心者向け）](https://www.codexa.net/collaborative-filtering-k-nearest-neighbor/)
